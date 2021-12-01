@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NavigationComponent</string>
+
+    <string name="fragment_title_home">Home</string>
+    <string name="fragment_title_settings">Settings</string>
+    <string name="fragment_title_list">List</string>
+    <string name="fragment_title_profile">Profile</string>
+
+    <string name="content_description_destination_list">xxx</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/destination_home">
+
+    <fragment
+        android:id="@+id/destination_home"
+        android:name="com.mclowicz.navigationcomponent.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/destination_settings" />
+        <action
+            android:id="@+id/action_destination_home_to_listFragment"
+            app:destination="@id/destination_list" />
+        <action
+            android:id="@+id/action_destination_home_to_profileFragment"
+            app:destination="@id/destination_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_settings"
+        android:name="com.mclowicz.navigationcomponent.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/destination_list"
+        android:name="com.mclowicz.navigationcomponent.ListFragment"
+        android:label="ListFragment" />
+    <fragment
+        android:id="@+id/destination_profile"
+        android:name="com.mclowicz.navigationcomponent.ProfileFragment"
+        android:label="ProfileFragment" />
+</navigation>
